@@ -165,31 +165,31 @@ body {
   text-decoration: none;
   color: black;
 }
-.container .about {
+.container .intro {
   width: 100%;
   display: flex;
   flex-direction: row;
   height: 450%;
 }
-.container .about .portrait {
+.container .intro .portrait {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.container .about .portrait img {
+.container .intro .portrait img {
   width: 55%;
   height: 65%;
   border-radius: 50%;
 }
-.container .about .about-me {
+.container .intro .about-me {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 80%;
 }
-.container .about .about-me h1 {
+.container .intro .about-me h1 {
   font-size: 250%;
 }
-.container .about .about-me p span {
+.container .intro .about-me p span {
   color: crimson;
 }
