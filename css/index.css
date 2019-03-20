@@ -136,10 +136,14 @@ body {
 }
 /* me doing more by doing less */
 .container {
-  background: blue;
   width: 100%;
   height: 100%;
   display: flex;
+  /* navigation bar */
+  /* about section */
+  /* projects section */
+  /* contact section */
+  /* footer */
 }
 .container .navigation {
   background: rgba(135, 144, 158, 0.8);
