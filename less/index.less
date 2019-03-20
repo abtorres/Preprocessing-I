@@ -86,8 +86,35 @@ html, body {
 	}
 	/* about section */
 	.about {
-		background: blueviolet;
-		height: 450px;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		height: 450%;
+		.portrait {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			img {
+				width: 55%;
+				height: 65%;
+				border-radius: 50%;
+			}
+		}
+		.about-me {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: 80%;
+			h1 {
+				font-size: 250%;
+			}
+			p {
+				span {
+					color: crimson;
+				}
+			}
+		}
 	}
 
 	/* projects section */
