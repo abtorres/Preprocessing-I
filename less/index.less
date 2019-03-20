@@ -54,7 +54,8 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%;
 }
 
 /* me doing more by doing less */
@@ -84,7 +85,8 @@ html, body {
 			
 		}
 	}
-	/* about section */
+	/* intro header */
+	@lambda-crimson: crimson;
 	.intro {
 		width: 100%;
 		display: flex;
@@ -109,10 +111,12 @@ html, body {
 			h1 {
 				font-size: 250%;
 			}
-			p {
-				span {
-					color: crimson;
+			p {	
+				a {
+					text-decoration: none;
+					color: @lambda-crimson;
 				}
+				
 			}
 		}
 	}
