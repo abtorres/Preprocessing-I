@@ -137,8 +137,8 @@ body {
 /* me doing more by doing less */
 .container {
   width: 100%;
-  height: 100%;
   display: flex;
+  flex-direction: column;
   /* navigation bar */
   /* about section */
   /* projects section */
@@ -164,4 +164,8 @@ body {
 .container .navigation .nav-items .item a {
   text-decoration: none;
   color: black;
+}
+.container .about {
+  background: blueviolet;
+  height: 450px;
 }
