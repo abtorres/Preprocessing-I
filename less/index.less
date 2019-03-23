@@ -59,10 +59,19 @@ html, body {
 }
 
 /* me doing more by doing less */
-.container {
-	width: 100%;
+.flex-col {
 	display: flex;
 	flex-direction: column;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.container {
+	width: 100%;
+	.flex-col;
 	/* navigation bar */
 	.navigation {
 		background:rgba(135, 144, 158, .8);
@@ -80,6 +89,7 @@ html, body {
 				a {
 					text-decoration: none;
 					color: black;
+					font-size: 1.6rem;
 				}
 			}
 			
@@ -89,9 +99,7 @@ html, body {
 	@lambda-crimson: crimson;
 	.intro {
 		width: 100%;
-		display: flex;
-		flex-direction: row;
-		height: 450%;
+		.flex-row;
 		.portrait {
 			display: flex;
 			align-items: center;
@@ -109,9 +117,10 @@ html, body {
 			justify-content: center;
 			width: 80%;
 			h1 {
-				font-size: 250%;
+				font-size: 5.4rem;
 			}
 			p {	
+				font-size: 1.6rem;
 				a {
 					text-decoration: none;
 					color: @lambda-crimson;
@@ -120,9 +129,39 @@ html, body {
 			}
 		}
 	}
+	/* intro section */
+	.intro-skills-sec {
+		width: 100%;
+		.flex-col;
+		h1 {
+			font-size: 4.5rem;
+			width: 100%;
+			text-align: center;
+			padding: 3%;
+		}
+		.skills-lists {
+			.list {
+				width: 100%;
+				.flex-row;
+				justify-content: space-evenly;
+				align-content: center;
+				span {
+					.flex-col;
+					align-items: center;
+					margin-top: 50px;
+					i {
+						font-size: 8rem;
+						margin-bottom:20px;
+					}
+					h2 {
+						font-size: 4rem;
+						margin-bottom: 30px;
+					}
+				}
+			}
+		}
 
-	/* projects section */
-	
+	}
 	/* contact section */
 
 	/* footer */

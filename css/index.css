@@ -133,15 +133,24 @@ table {
 html,
 body {
   height: 100%;
+  font-size: 62.5%;
 }
 /* me doing more by doing less */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
 .container {
   width: 100%;
   display: flex;
   flex-direction: column;
   /* navigation bar */
-  /* about section */
-  /* projects section */
+  /* intro header */
+  /* intro section */
   /* contact section */
   /* footer */
 }
@@ -164,12 +173,12 @@ body {
 .container .navigation .nav-items .item a {
   text-decoration: none;
   color: black;
+  font-size: 1.6rem;
 }
 .container .intro {
   width: 100%;
   display: flex;
   flex-direction: row;
-  height: 450%;
 }
 .container .intro .portrait {
   display: flex;
@@ -188,8 +197,44 @@ body {
   width: 80%;
 }
 .container .intro .about-me h1 {
-  font-size: 250%;
+  font-size: 5.4rem;
 }
-.container .intro .about-me p span {
+.container .intro .about-me p {
+  font-size: 1.6rem;
+}
+.container .intro .about-me p a {
+  text-decoration: none;
   color: crimson;
+}
+.container .intro-skills-sec {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container .intro-skills-sec h1 {
+  font-size: 4.5rem;
+  width: 100%;
+  text-align: center;
+  padding: 3%;
+}
+.container .intro-skills-sec .skills-lists .list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.container .intro-skills-sec .skills-lists .list span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.container .intro-skills-sec .skills-lists .list span i {
+  font-size: 8rem;
+  margin-bottom: 20px;
+}
+.container .intro-skills-sec .skills-lists .list span h2 {
+  font-size: 4rem;
+  margin-bottom: 30px;
 }
